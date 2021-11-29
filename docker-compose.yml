@@ -1,0 +1,7 @@
+services:
+  web:
+    image: nginx:latest
+    volumes:
+      - ./:/usr/share/nginx/html
+    environment:
+      VIRTUAL_HOST: toc.test
